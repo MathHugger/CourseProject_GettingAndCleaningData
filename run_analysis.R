@@ -154,5 +154,3 @@ tidy_averages <- dcast(x_melt, subject_number + activity ~ variable, mean)
 ## nrow(tidy_averages) ## 180.  30 subects and 6 activities per = 180
 
 write.table(tidy_averages, "tidy_averages.txt", sep = "\t")
-d <- colnames(final_output)
-write.table(d, "d.txt", sep = "\t")
